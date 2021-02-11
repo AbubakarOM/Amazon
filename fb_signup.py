@@ -13,7 +13,7 @@ def step_impl(context):
     wait = WebDriverWait(context.driver, 60)
     wait.until(abu.visibility_of_element_located((By.CSS_SELECTOR, "input#email")))
     context.driver.find_element_by_css_selector("input#email").send_keys("abu4real_md@yahoo.com")
-    context.driver.find_element_by_css_selector( "input#pass").send_keys("@kolawole1")
+    context.driver.find_element_by_css_selector( "input#pass").send_keys("@password")
     context.driver.find_element_by_xpath_selector( "//html[@id='facebook']//button[@id='u_0_f']").click()
 
 @step(u'I click on dropdown')
